@@ -16,7 +16,7 @@ class TrackOrders:
         self.orders.append([costumer, order, day])
 
     def get_most_ordered_dish_per_costumer(self, costumer):
-        return favorite_order(self.order, costumer)
+        return favorite_order(self.orders, costumer)
 
     def get_never_ordered_per_costumer(self, costumer):
         return never_ordered(self.orders, costumer)
